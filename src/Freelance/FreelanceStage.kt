@@ -10,8 +10,8 @@ class FreelanceStage(val character: Character) : MainPhase() {
         statisticPrint(character)
         separatorPrint()
 
-        println("Ваш первый день на фрилансе. Клиентов нет, вы вынуждены подрабатывать дворником.")
-        Thread.sleep(5000)
+        println("Ваш первый день на фрилансе. Клиентов нет, вы вынуждены подрабатывать дворником. (для продолжения введите что-либо)")
+        val need = readLine()
         for (i in 2..365){
             negativePrint("День $i. Клиентов нет.")
             Thread.sleep(30)
